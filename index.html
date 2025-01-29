@@ -10,7 +10,7 @@
 <body>
   <div id="userDashboard">
     <h1>User Management Dashboard</h1>
-    <button id="addUserButton">Add User</button>
+    <button id="addUserBtn">Add User</button> 
     <table id="userTable">
       <thead>
         <tr>
@@ -27,19 +27,22 @@
       </tbody>
     </table>
   </div>
-  <div id="userFormModal" class="modal">
+  
+  <!-- Modal Form to Add User -->
+  <div id="userFormModal" class="modal" style="display:none;">
     <div class="modal-content">
-      <h2 id="formTitle">Add User</h2>
+      <h2>Add User</h2>
       <form id="userForm">
         <input type="text" id="firstName" placeholder="First Name" required>
         <input type="text" id="lastName" placeholder="Last Name" required>
         <input type="email" id="email" placeholder="Email" required>
         <input type="text" id="department" placeholder="Department" required>
         <button type="submit">Save</button>
-        <button type="button" id="cancelButton">Cancel</button>
+        <button type="button" id="cancelButton">Cancel</button> <!-- Cancel button -->
       </form>
     </div>
   </div>
+
   <script src="Script.js"></script>
 </body>
 </html>
