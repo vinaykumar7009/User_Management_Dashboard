@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <div id="userDashboard">
+    <h1>User Management Dashboard</h1>
+    <button id="addUserButton">Add User</button>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- Dynamic user list will be injected here -->
+      </tbody>
+    </table>
+  </div>
+  <div id="userFormModal" class="modal">
+    <div class="modal-content">
+      <h2 id="formTitle">Add User</h2>
+      <form id="userForm">
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <button type="submit">Save</button>
+        <button type="button" id="cancelButton">Cancel</button>
+      </form>
+    </div>
+  </div>
+  <script src="Script.js"></script>
 </body>
 </html>
