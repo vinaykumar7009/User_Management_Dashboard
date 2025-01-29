@@ -1,0 +1,131 @@
+
+   /* Global Variables */
+:root {
+    --primary-color: #007BFF;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --border-color: #ddd;
+    --modal-background: rgba(0, 0, 0, 0.5);
+    --font-family: 'Arial', sans-serif;
+    --border-radius: 10px;
+    --padding: 10px;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* User Dashboard */
+  #userDashboard {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: black;
+  }
+  
+  button:hover {
+    background-color: darken(var(--primary-color), 10%);
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    word-wrap: break-word;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-background);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Styles */
+  input {
+    width: 100%;
+    padding: var(--padding);
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #userDashboard {
+      width: 95%;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  }
+  
