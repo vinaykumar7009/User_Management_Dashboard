@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         userFormModal.style.display = 'none'; // Hide the modal when canceled
     });
 
-    // Handle Edit button click
+    //---------------------------------------------- Handle Edit button click
     document.addEventListener('click', (e) => {
         if (e.target && e.target.classList.contains('editBtn')) {
             const userId = e.target.getAttribute('data-id');
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Handle Delete button click
+    //------------------------------------------Handle Delete button click
     document.addEventListener('click', async (e) => {
         if (e.target && e.target.classList.contains('deleteBtn')) {
             const userId = e.target.getAttribute('data-id');
@@ -144,4 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+    
+   
 });
