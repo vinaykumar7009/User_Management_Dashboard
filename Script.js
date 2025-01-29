@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchUsers = async () => {
         try {
             const response = await fetch('https://jsonplaceholder.typicode.com/users');
+            if (!response.ok) throw new Error('Failed to fetch users');
             const users = await response.json();
             userTableBody.innerHTML = ''; // Clear the existing table content
             users.forEach(user => {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         } catch (error) {
             console.error('Error fetching users:', error);
+            alert('There was an error loading the user data. Please try again later.');
         }
     };
 
@@ -144,6 +146,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-    
-   
 });
