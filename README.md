@@ -1,2 +1,65 @@
-# User_Management_Dashboard
-Develop a simple web application where users can view, add, edit, and delete user details from a mock backend API.
+
+# User Management Dashboard
+
+A simple User Management Dashboard that allows users to view, add, edit, and delete users using data fetched from a placeholder API.
+(You can check the organized file structure in branch Effective_file_organization instead of the main branch )
+
+## 📌 Features
+
+✔ Fetch users from API and display them in a table
+
+✔ Add new users with a modal form
+
+✔ Edit existing users with real-time table updates
+
+✔ Delete users dynamically
+
+✔ Responsive design for mobile and desktop
+
+✔ Modular JavaScript & CSS for better maintainability
+
+
+## 📂 Project Structure
+
+
+📁 user-management-dashboard 
+│── 📁 css                # Stylesheets  
+│   ├── variables.css      # Global variables  
+│   ├── global.css         # General layout & styles  
+│   ├── buttons.css        # Button styles  
+│   ├── table.css          # Table styles  
+│   ├── modal.css          # Modal styles  
+│   ├── forms.css          # Form styles  
+│  
+│── 📁 js                 # JavaScript files  
+│   ├── api.js            # Fetching data from API  
+│   ├── modal.js          # Modal show/hide functionality  
+│   ├── formHandler.js    # Handling form submissions  
+│   ├── eventListeners.js # Handling button click events  
+│   ├── main.js           # Initialization & setup  
+│── index.html            # Main HTML file  
+│── styles.css            # (Optional) Main CSS file (if combined)  
+│── README.md             # Project documentation  
+
+## 🚀 Installation & Setup
+1️⃣ Clone the Repository
+## code
+git clone https://github.com/your-username/user-management-dashboard.git
+
+cd user-management-dashboard
+## 2️⃣ Open in Browser
+Simply open index.html in your preferred browser.
+## 📜 Usage
+1️⃣ Click the "Add User" button to open the modal and enter user details.
+
+2️⃣ Click the "Edit" button to modify user details. The modal title will change to "Edit User".
+
+3️⃣ Click the "Delete" button to remove a user from the list.
+## 🛠 Technologies Used
+✅ HTML5
+✅ CSS3
+✅ JavaScript (ES6)
+✅ Fetch API
+## 📄 License
+This project is licensed under the MIT License.
+## Happy Coding! 🚀
