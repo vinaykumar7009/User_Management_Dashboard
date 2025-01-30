@@ -62,9 +62,9 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: #0056b3; /* Darker shade of #007BFF */
   transform: scale(1.05);
-    color: black;
+  color: black;
 }
 
 button:focus {
