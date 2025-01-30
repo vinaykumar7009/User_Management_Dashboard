@@ -48,7 +48,7 @@ git clone https://github.com/your-username/user-management-dashboard.git
 cd user-management-dashboard
 
 
-cd user-management-dashboard
+
 ## 2️⃣ Open in Browser
 Simply open index.html in your preferred browser.
 ## 📜 Usage
