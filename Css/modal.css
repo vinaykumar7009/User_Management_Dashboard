@@ -20,20 +20,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.userFormModal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 768px) {
     .modal-content {
         width: 90%;
+        padding: 20px;
+    }
+
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

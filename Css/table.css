@@ -2,7 +2,6 @@ table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 th, td {
@@ -18,7 +17,26 @@ th {
 }
 
 @media (max-width: 768px) {
-    table {
+    th, td {
+        padding: 10px;
         font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    #userTableBody {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 10px;
     }
 }

@@ -4,23 +4,26 @@ button {
     color: white;
     border: none;
     border-radius: var(--border-radius);
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    color: black;
 }
 
 button:hover {
     background-color: darken(var(--primary-color), 10%);
     transform: scale(1.05);
+    color: black;
 }
 
 button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    color: black;
 }
 
 @media (max-width: 768px) {
     button {
-        padding: 8px 16px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
