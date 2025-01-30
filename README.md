@@ -1,8 +1,8 @@
 
 # User Management Dashboard
-
+# You can check the More organized file structure in branch Effective_file_organization 
 A simple User Management Dashboard that allows users to view, add, edit, and delete users using data fetched from a placeholder API.
-(You can check the organized file structure in branch Effective_file_organization instead of the main branch )
+
 
 ## 📌 Features
 
