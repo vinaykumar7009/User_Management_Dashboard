@@ -41,9 +41,9 @@ A simple User Management Dashboard that allows users to view, add, edit, and del
 │── styles.css            # (Optional) Main CSS file (if combined)  
 │── README.md             # Project documentation  
 
-## **🚀 Installation & Setup**
-### **1️⃣ Clone the Repository**
-```bash
+## 🚀 Installation & Setup**
+### 1️⃣ Clone the Repository**
+
 git clone https://github.com/your-username/user-management-dashboard.git
 cd user-management-dashboard
 
